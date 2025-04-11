@@ -50,6 +50,10 @@ jobs:
               # Uses zoul as dummy target, fails on missing arm-none-eabi-gcc.
               # Tests/build system should be fixed.
               - os: macos-13
+                test: compile-xtensa-ports
+              # Uses ESP32 as dummy target, fails on missing arm-none-eabi-gcc.
+              # Tests/build system should be fixed.
+              - os: macos-13
                 test: tun-rpl-br
               # tests/utils.sh: kill_bg contains ps --ppid (not portable).
               - os: macos-13
